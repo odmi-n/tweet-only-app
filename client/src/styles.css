@@ -1,0 +1,100 @@
+/* --- ベース --- */
+body {
+  font-family: system-ui, sans-serif;
+  background: #f7f7f7;
+  margin: 0;
+  padding: 2rem;
+}
+
+header {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.username {
+  font-weight: bold;
+}
+
+.notify {
+  color: #d10000;
+  margin-left: .5rem;
+}
+
+/* --- TweetBox --- */
+.tweet-box {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1rem;
+  max-width: 620px;
+}
+
+.avatar {
+  float: left;
+  width: 48px;
+  height: 48px;
+  background: #ccc;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 48px;
+  margin-right: .75rem;
+}
+
+textarea {
+  width: calc(100% - 60px);
+  min-height: 100px;
+  border: none;
+  resize: vertical;
+  font-size: 1rem;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: .5rem;
+}
+
+.icons button {
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  margin-right: .5rem;
+  cursor: not-allowed;
+  opacity: .4;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.count {
+  margin-right: .5rem;
+  font-size: .875rem;
+}
+
+.count.over {
+  color: #d10000;
+}
+
+.tweet-btn {
+  background: #1d9bf0;
+  color: #fff;
+  border: none;
+  border-radius: 9999px;
+  padding: .5rem 1.25rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.tweet-btn:disabled {
+  opacity: .5;
+  cursor: not-allowed;
+} 
