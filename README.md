@@ -9,7 +9,7 @@ tweet-only-app/
 ├── server/          # Node.js (Express) backend
 │   ├── index.js
 │   ├── package.json
-│   └── env          # Environment variables file (should be added to .gitignore)
+│   └── .env          # Environment variables file (should be added to .gitignore)
 └── client/          # React (Vite) frontend
     ├── index.html
     ├── vite.config.js
