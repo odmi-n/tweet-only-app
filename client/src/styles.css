@@ -29,6 +29,8 @@ header {
   border-radius: 12px;
   padding: 1rem;
   max-width: 620px;
+  position: relative;
+  overflow: visible;
 }
 
 .avatar {
@@ -44,10 +46,18 @@ header {
 
 textarea {
   width: calc(100% - 60px);
-  min-height: 100px;
+  min-height: 80px;
   border: none;
-  resize: vertical;
+  resize: none;
   font-size: 1rem;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+  display: block;
+  background: transparent;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
 }
 
 textarea:focus {
@@ -76,12 +86,23 @@ textarea:focus {
 }
 
 .count {
-  margin-right: .5rem;
+  margin-right: .75rem;
   font-size: .875rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  background: #f7f7f7;
+  padding: 4px 8px;
+  border-radius: 9999px;
 }
 
 .count.over {
-  color: #d10000;
+  color: #fff;
+  background: #d10000;
+}
+
+.count.warning {
+  color: #fff;
+  background: #ffa500;
 }
 
 .tweet-btn {
@@ -97,4 +118,27 @@ textarea:focus {
 .tweet-btn:disabled {
   opacity: .5;
   cursor: not-allowed;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow: visible;
+  padding: 1rem;
+  padding-left: calc(48px + 1.75rem);
+  font-size: 1rem;
+  line-height: 1.5;
+  color: transparent;
+  height: 140px;
+  overflow-y: hidden;
+}
+
+.text-overlay .overflow {
+  background-color: rgba(255, 0, 0, 0.2);
+  border-radius: 4px;
 } 
