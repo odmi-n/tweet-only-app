@@ -26,7 +26,7 @@ tweet-only-app/
 
 ### 1. Install Dependencies
 
-Dependencies are already installed. If you need to update them, run the following commands:
+You need to install dependencies first as node_modules are not included in the repository:
 
 #### Backend (Server)
 ```bash
